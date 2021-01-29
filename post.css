@@ -1,0 +1,54 @@
+.image-post{
+    width:auto; 
+    text-align:center; 
+    padding:20px;
+}
+
+img { 
+    width:50%; 
+    height: 50%; 
+    object-fit: contain; 
+} 
+
+.quote {
+    margin: 0;
+    background: #eee;
+    padding: 1em;
+    border-radius: 1em;
+    text-align: center;
+    border-width: 20%;
+    max-width: 50%;
+    display: inline;
+
+  }
+  .quote figcaption,
+  .quote blockquote {
+    margin: 1em;
+  }
+
+
+  .logo-author{
+    background-position: center top;
+    padding:3px;
+    margin-left:1em;
+    width: 10%;
+    height: 10%;
+    border-radius: 50%;
+    display:inline-flex; 
+
+  }
+
+.author-name{
+    display: inline-flex;
+    vertical-align: middle;
+    width:auto;
+    height: 10%;
+    margin-bottom: 7em;
+}
+
+article{
+  margin-left: 2em;
+}
+
+
+

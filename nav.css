@@ -1,0 +1,41 @@
+
+/* Background color of top navigation bar */
+.topnav {
+    overflow: hidden;
+  }
+
+/* Style inside the navaigation bar */
+.topnav a {
+    float:right; 
+    display:flex; 
+    padding: 30px; 
+    text-decoration: none;
+    font-size: 25px;
+   /* color:black; */
+    padding-top: 60px;
+    margin: auto 10;
+
+  }
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color:#88bdbc;
+    ;
+  
+  }
+
+.nav-item{
+    font-size: 45px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    margin-right: 1em;
+    
+}
+
+.logo-name{
+    font-size: 50px;
+    font-family:'Times New Roman', Times, serif;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 1em;
+}

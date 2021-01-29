@@ -1,0 +1,92 @@
+@import '../CssFiles/media.css';
+@import '../CssFiles/card.css';
+@import '../CssFiles/nav.css';
+@import '../CssFiles/colors.css';
+@import '../CssFiles/subscribe.css';
+@import '../CssFiles/social.css';
+@import '../CssFiles/post.css';
+
+/* If screen is below 900px this is our template area *MOBILE* */
+.container{
+    display:grid;
+    height: 90vh; 
+  
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-areas: 
+    "hd"
+    "main"
+    "sd"
+    "ft";
+   /* border: 2px solid black; */
+}
+
+/* If screen is medium */
+@media(min-width:600px) and (max-width:1100px){
+    .container{
+        display:grid;
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto auto auto auto;
+        grid-template-areas: 
+        "hd hd hd hd hd hd   "
+        "main main main main main main  "
+        "sd sd sd sd sd sd "
+        "ft ft ft ft ft ft ";
+
+     }
+    }
+
+/* If screen is large and greater than 1100 */
+@media(min-width:1100px){
+.container{
+    display:grid;
+    grid-template-areas: 
+    "hd hd hd hd hd hd hd hd "
+    "main main main main main main main main"
+    "sd sd sd sd sd sd sd sd"
+    "ft ft ft ft ft ft ft ft ";
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto auto auto;
+ }
+}
+
+.header{
+    grid-area: hd;
+}
+
+.sidebar{
+    grid-area:sd;
+} 
+
+.content{
+    grid-area:main;
+}
+
+.footer{
+    grid-area:ft;
+    text-align: center;
+
+}
+
+body {
+    font-family:'Times New Roman', Times, serif;
+    font-size: 1rem;
+    font-weight: normal;
+    line-height: 1.5;
+} 
+
+/*
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+
+*/
